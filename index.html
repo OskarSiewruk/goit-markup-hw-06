@@ -74,6 +74,32 @@
 							<svg class="modal-escape" data-modal-close>
 								<use href="./images/icons.svg#modal-close-icon"></use>
 							</svg>
+							<h3 class="modal-header">
+								Zostaw swoje dane w formularzu poniżej
+							</h3>
+							<form>
+								<label>
+									<p>Imie</p>
+									<input type="username" name="username" />
+								</label>
+								<label>
+									<p>Telefon</p>
+									<input type="phone" name="phone" />
+								</label>
+								<label>
+									<p>Email</p>
+									<input type="email" name="email" />
+								</label>
+								<label>
+									<p>Komentarz</p>
+									<input type="text" name="comment" />
+								</label>
+								<label>
+									<input type="radio" />Oświadczam iż akceptuję Regulamin i
+									Politykę Prywatności.
+								</label>
+								<button type="submit">Wyślij</button>
+							</form>
 						</section>
 					</div>
 				</div>
@@ -506,6 +532,25 @@
 						</li>
 					</ul>
 				</div>
+				<form class="flex">
+					<div>
+						<p>Zapisz się do newslettera</p>
+						<label>
+							<input
+								type="email"
+								name="newsletter-email"
+								placeholder="E-mail"
+							/>
+						</label>
+					</div>
+
+					<button class="footer-send-button" type="submit">
+						<p>Zapisz się</p>
+						<svg class="footer-send-icon">
+							<use href="./images/icons.svg#send-icon"></use>
+						</svg>
+					</button>
+				</form>
 			</div>
 		</footer>
 		<script src="./js/modal.js"></script>

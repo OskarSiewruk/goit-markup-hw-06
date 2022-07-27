@@ -197,7 +197,7 @@ body {
 	z-index: 200;
 	background-color: #00000033;
 	border: 1px;
-	transition: opacity 250ms, visibility 250ms;
+	transition: opacity 500ms, visibility 500ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -701,4 +701,11 @@ footer {
 
 .service-list {
 	display: flex;
+}
+
+
+
+.footer-send-icon {
+	width: 24px;
+	height: 24px;
 }
