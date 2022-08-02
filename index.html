@@ -77,28 +77,44 @@
 							<h3 class="modal-header">
 								Zostaw swoje dane w formularzu poniżej
 							</h3>
-							<form>
-								<label>
+							<form class="modal-form">
+								<label class="modal-label">
 									<p>Imie</p>
-									<input type="username" name="username" />
+									<input type="text" name="username" />
 								</label>
-								<label>
+								<label class="modal-label">
 									<p>Telefon</p>
 									<input type="phone" name="phone" />
 								</label>
-								<label>
+								<label class="modal-label">
 									<p>Email</p>
 									<input type="email" name="email" />
 								</label>
-								<label>
+									<label class="modal-label">
 									<p>Komentarz</p>
-									<input type="text" name="comment" />
+									<textarea
+										class="modal-textarea"
+										placeholder="Wpisz komentarz..."
+										type="textarea"
+										name="comment"
+									></textarea>
 								</label>
-								<label>
-									<input type="radio" />Oświadczam iż akceptuję Regulamin i
-									Politykę Prywatności.
-								</label>
-								<button type="submit">Wyślij</button>
+								<div class="modal-label-checkbox">
+									<input
+										type="checkbox"
+										name="agreement"
+										value="agreement"
+										id="agreement"
+									/>
+									<label for="agreement"
+										>Oświadczam iż akceptuję
+										<a href="#" class="modal-agreements-link">Regulamin</a> i
+										<a href="#" class="modal-agreements-link"
+											>Politykę Prywatności</a
+										>.</label
+									>
+								</div>
+								<button class="modal-label-button" type="submit">Wyślij</button>
 							</form>
 						</section>
 					</div>
@@ -532,7 +548,7 @@
 						</li>
 					</ul>
 				</div>
-				<form class="flex">
+					<form class="flex">
 					<div>
 						<p>Zapisz się do newslettera</p>
 						<label>
@@ -545,7 +561,7 @@
 					</div>
 
 					<button class="footer-send-button" type="submit">
-						<p>Zapisz się</p>
+						<p class="footer-send-p">Zapisz się</p>
 						<svg class="footer-send-icon">
 							<use href="./images/icons.svg#send-icon"></use>
 						</svg>
