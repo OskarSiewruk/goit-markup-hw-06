@@ -230,42 +230,77 @@ body {
 	font-size: 20px;
 }
 
-.modal-label {
+.modal-list {
+	display: flex;
+	list-style: none;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 12px;
+}
+
+
+.modal-list > li > label {
 	display: block;
-	padding-left: 40px;
-	padding-top: 10px;
 }
 
-.modal-label:nth-child(1) {
-	padding-top: 12px;
+.modal-label-checkbox-div {
+	display: inline-block;
+	border: 2px solid #000;
+	width: 20px;
+	height: 19px;
+	border-radius: 3px;
 }
 
-.modal-label > p {
+.modal-label-checkbox:hover .modal-label-checkbox-div {
+	border-color: #2196f3;
+}
+
+.checkbox {
+	width: 20px;
+	height: 19px;
+	appearance: none;
+	z-index: 100;
+	border-radius: 4px;
+}
+
+.checkbox:checked + .modal-tick{
+	background-color: #2196f3;
+
+}
+
+
+.modal-list > li  {
 	font-size: 12px;
 	line-height: 1.17;
 	letter-spacing: 0.01em;
 	color: var(--contact-color);
+	width: 448px;
+	padding-bottom: 10px;
+	position: relative;
+}
+
+.modal-list > li:nth-child(4) {
+	padding-bottom: 0;
+}
+
+.modal-list > li:nth-child(5) {
+	padding-bottom: 0;
+}
+
+.modal-list > li > label {
 	margin-bottom: 4px;
 }
 
-.modal-label > input {
+.modal-list > li > input {
 	width: 448px;
 	height: 40px;
 	border: 1px solid #21212133;
 	border-radius: 4px;
+	padding-left: 42px;
+	outline: none;
 }
 
-.modal-label-checkbox {
-	padding-top: 20px;
-	text-align: center;
-	display: block;
-}
 
-.modal-label-checkbox > input {
-	padding-left: 5px;
-	width: 16px;
-	height: 15px;
-}
 
 .modal-label-checkbox > label {
 	margin-left: 8px;
@@ -276,9 +311,6 @@ body {
 	font-size: 14px;
 }
 
-.modal-agreements-link {
-	color: var(--choose-color);
-}
 
 .modal-textarea {
 	width: 448px;
@@ -290,6 +322,49 @@ body {
 	letter-spacing: 0.01em;
 	border: 1px solid #21212133;
 	border-radius: 4px;
+	outline: none;
+}
+
+.modal-label-checkbox {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.modal-label-checkbox > input {
+	position: absolute;
+	left: 10.5px;
+	outline: none;
+}
+
+.modal-agreements-link {
+	color: var(--choose-color);
+}
+
+.modal-svg {
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	left: 13.5px;
+	top: 29px;
+}
+
+.modal-tick {
+	position: absolute;
+	width: 17px;
+	height: 16px;
+	left: 12px;
+	top: 1.5px;
+	border-radius: 2px;
+}
+
+.modal-input-color:focus-within {
+	border-color: #2196f3;
+}
+
+.modal-list-item:focus-within {
+	fill: #2196f3;
 }
 
 .modal-label-button {

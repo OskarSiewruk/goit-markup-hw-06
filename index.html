@@ -78,42 +78,86 @@
 								Zostaw swoje dane w formularzu poniżej
 							</h3>
 							<form class="modal-form">
-								<label class="modal-label">
-									<p>Imie</p>
-									<input type="text" name="username" />
-								</label>
-								<label class="modal-label">
-									<p>Telefon</p>
-									<input type="phone" name="phone" />
-								</label>
-								<label class="modal-label">
-									<p>Email</p>
-									<input type="email" name="email" />
-								</label>
-									<label class="modal-label">
-									<p>Komentarz</p>
-									<textarea
-										class="modal-textarea"
-										placeholder="Wpisz komentarz..."
-										type="textarea"
-										name="comment"
-									></textarea>
-								</label>
-								<div class="modal-label-checkbox">
-									<input
-										type="checkbox"
-										name="agreement"
-										value="agreement"
-										id="agreement"
-									/>
-									<label for="agreement"
-										>Oświadczam iż akceptuję
-										<a href="#" class="modal-agreements-link">Regulamin</a> i
-										<a href="#" class="modal-agreements-link"
-											>Politykę Prywatności</a
-										>.</label
-									>
-								</div>
+								<ul class="modal-list">
+									<li class="modal-list-item">
+										<label for="user-name-modal" class="modal-label">
+											Imie</label
+										>
+
+										<input
+											class="modal-input-color"
+											id="user-name-modal"
+											type="text"
+											name="username"
+										/>
+										<svg class="modal-svg">
+											<use href="images/icons.svg#modal-name"></use>
+										</svg>
+									</li>
+									<li class="modal-list-item">
+										<label for="phone-modal" class="modal-label">
+											Telefon
+										</label>
+										<input
+											class="modal-input-color"
+											id="phone-modal"
+											type="phone"
+											name="phone"
+										/>
+										<svg class="modal-svg">
+											<use href="images/icons.svg#modal-phone"></use>
+										</svg>
+									</li>
+									<li class="modal-list-item">
+										<label for="email-modal" class="modal-label"> Email</label>
+										<input
+											class="modal-input-color"
+											id="email-modal"
+											type="email"
+											name="email"
+										/>
+										<svg class="modal-svg">
+											<use href="images/icons.svg#modal-mail"></use>
+										</svg>
+									</li>
+									<li class="modal-list-item">
+										<label for="textarea-modal" class="modal-label">
+											Komentarz</label
+										>
+										<textarea
+											id="textarea-modal"
+											class="modal-textarea modal-input-color"
+											placeholder="Wpisz komentarz..."
+											type="textarea"
+											name="comment"
+										></textarea>
+									</li>
+									<li>
+										<div class="modal-label-checkbox">
+											<div class="modal-label-checkbox-div"></div>
+											<input
+												class="checkbox"
+												type="checkbox"
+												name="agreement"
+												value="agreement"
+												id="agreement"
+											/>
+											<svg class="modal-tick">
+											<use href="images/icons.svg#modal-tick"></use>
+										</svg>
+
+											<label for="agreement"
+												>Oświadczam iż akceptuję
+												<a href="#" class="modal-agreements-link">Regulamin</a>
+												i
+												<a href="#" class="modal-agreements-link"
+													>Politykę Prywatności </a
+												>.
+											</label>
+										</div>
+									</li>
+								</ul>
+
 								<button class="modal-label-button" type="submit">Wyślij</button>
 							</form>
 						</section>
@@ -548,7 +592,7 @@
 						</li>
 					</ul>
 				</div>
-					<form class="flex">
+				<form class="flex">
 					<div>
 						<p>Zapisz się do newslettera</p>
 						<label>
